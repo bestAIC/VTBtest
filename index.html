@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Test</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.scroll-to.min.js"></script>   
+  <script type="text/javascript" src="js/plugins-scroll.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+
+  <div class="b-top_nav">
+    <ul class="b-wrap b-nav m-clear">
+      <!--li class="b-nav_item">
+        <div class="b-dropdown">Частным лицам</div>
+      </li>
+      <li class="b-nav_item">
+        <ul class="b-sub_nav">
+          <li class="b-sub_nav_item"><span class="b-geo">Санкт-Петербург</span></li>
+          <li class="b-sub_nav_item"><span>Офисы и банкоматы</span></li>
+          <li class="b-sub_nav_item"><span>Контакты</sapn></li>          
+        </ul>
+      </li>
+      <li class="b-nav_item">
+        <span class="b-login">Интернет-банк</span>
+      </li-->
+    </ul>
+  </div>
+
+  <div class="b-header">
+    <div class="b-scroll_fade"></div>
+
+    <div class="b-header_bg_fade">
+      <div class="b-scroll_fade_2"></div>
+
+      <div class="b-video_cover s-foreground">
+        <video id="Video1" js-src-mp4="video/01_vtb.mp4" js-src-webm="video/01_vtb.mp4" preload="" autoplay="" src="video/01_vtb.mp4"></video>
+      </div>
+      <div class="b-start_image s-go">
+        <img src="img/banner_pic.png">
+      </div>  
+      <div class="b-video_cover">
+        <video id="Video2" js-src-mp4="video/02_vtb.mp4" js-src-webm="video/02_vtb.mp4" preload="" src="video/02_vtb.mp4"></video>
+      </div>
+      <div class="b-video_cover s-backdrop">
+        <video id="Video3" js-src-mp4="video/03_vtb.mp4" js-src-webm="video/03_vtb.mp4" preload="" src="video/03_vtb.mp4"></video>
+      </div>  
+      <div class="b-video_cover s-backdrop">
+        <video id="Video4" js-src-mp4="video/04_vtb.mp4" js-src-webm="video/04_vtb.mp4" preload="" src="video/04_vtb.mp4"></video>
+      </div>
+      <div class="b-video_cover s-backdrop">
+        <video id="Video5" js-src-mp4="video/05_vtb.mp4" js-src-webm="video/05_vtb.mp4" preload="" src="video/05_vtb.mp4"></video>
+      </div> 
+  
+      <div class="b-menu_cover">
+        <div class="b-wrap">
+          <ul class="b-menu">
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_1">Кредит наличными</span></li>
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_2">Банковские карты</span></li>
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_3">Ипотека</span></li>
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_4">Автокредиты</span></li>
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_5">Вклады и сбережения</span></li>
+            <li class="b-menu_item"><span class="s-menu_show" id="subsection_6">Другие услуги</span></li>
+          </ul>
+          <div class="b-line_slide"><div></div></div>
+        </div>
+      </div> 
+
+      <div class="b-wrap">  
+
+        <div class="b-bnr_txt m-n_1 s-active">
+          <h1>Кредит «Удобный»</h1>
+          <p class="b-bnr_subtitle">Честность &ndash; удел сильных</p>
+          <table class="b-num_info">
+            <tr>
+              <th>ставка</th>
+              <th>сумма</th>
+              <th>на срок</th>
+            </tr>
+            <tr>
+              <td><small>от</small> 19%</td>
+              <td>100 000 &ndash; 399 999 Р</td>
+              <td>13 &ndash; 60 <small>мес.</small></td>
+            </tr>
+          </table>
+          <span id="content_n_1" class="b-btn" data-video="Video1">Рассчитать кредит</span>
+        </div>      
+        <div class="b-bnr_txt m-n_2">
+          <h1>Карта впечатлений</h1>
+          <table class="b-num_info_2">
+            <tr>
+              <td>
+                <p><span class="b-num_big">3%</span> <small class="b-num_note">cash back при оплате счета в кафе,<br/>ресторане, покупке билетов в кино</small></p>
+                <p><span class="b-num_big">1%</span> <small class="b-num_note">cash back при оплате<br/>других покупок</small></p>
+              </td>
+              <td>
+                <p>Ставка по кредиту &ndash; <span>26%</span></p>
+                <p>Кредитный лимит &ndash; <span><small>до</small> 750 000 Р</span></p>
+                <p>Комиссия за оформление &ndash; <span>350 Р</span></p>
+                <p>Комиссия за обслуживание &ndash; <small>бесплатно</small></p>
+              </td>
+            </tr>         
+          </table>
+          <span id="content_n_2" class="b-btn" data-video="Video2">Рассчитать выгоду</span>
+        </div> 
+        <div class="b-bnr_txt m-n_3">
+          <h1>Покупка готового жилья</h1>
+          <p class="b-bnr_subtitle">Думай кого берешь в долгий путь</p>
+          <table class="b-num_info">
+            <tr>
+              <th>ставка</th>
+              <th>первый взнос</th>
+              <th>размер кредита</th>
+            </tr>
+            <tr>
+              <td><small>от</small> 13,5%</td>
+              <td><small>от</small> 20%</td>
+              <td>1 500 000 &ndash; 9 000 000 Р</td>
+            </tr>
+          </table>        
+          <span id="content_n_3" class="b-btn" data-video="Video3">Рассчитать ипотеку</span>
+        </div>
+        <div class="b-bnr_txt m-n_4">
+          <h1>Субсидирование автокредита</h1>
+          <p class="b-bnr_subtitle">За свободу приходится платить</p>
+          <table class="b-num_info">
+            <tr>
+              <th>ставка</th>
+              <th>размер кредита</th>
+            </tr>
+            <tr>
+              <td><small>от</small> 7,7%</td>
+              <td>350 000 &ndash; 920 000 Р</td>
+            </tr>
+          </table>          
+          <span id="content_n_1" class="b-btn" data-video="Video4">Рассчитать кредит</span>
+        </div> 
+        <div class="b-bnr_txt m-n_5">
+          <h1>Вклад «Накопительный»</h1>
+          <p class="b-bnr_subtitle">Настал тот момент, когда деньги начнут работать на тебя</p>
+          <table class="b-num_info">
+            <tr>
+              <th>ставка</th>
+              <th>возможности</th>
+            </tr>
+            <tr>
+              <td><small>до</small> 8,9%</td>
+              <td><small class="b-pad">&#10003; Пополнение</small> <small>&#10003; Частичное снятие</small></td>
+            </tr>
+          </table>         
+          <span id="content_n_5" class="b-btn" data-video="Video5">Рассчитать вклад</span>
+        </div> 
+
+        <div class="b-bnr_txt m-distribution_cover m-n_1_1">
+          <h1>Честность — удел сильных</h1>
+          <ul class="b-col_cover m-distribution">
+            <li class="b-col m-w_33">
+              <div class="Video5" data-txt="m-n_5" data-content="s-content_n_5">
+                <h2><span>«Комфортный»</span></h2>
+                <p>6,00%</p>
+                <p class="b-small_txt">Снятие</br>и пополнение</p>
+              </div>
+            </li><li class="b-col m-w_33">
+              <div class="Video5" data-txt="m-n_5" data-content="s-content_n_5">
+                <h2><span>«Накопительный»</span></h2>
+                <p>8,90%</p>
+                <p class="b-small_txt">Только</br>пополнение</p>
+              </div>
+            </li><li class="b-col m-w_33">
+              <div class="Video5" data-txt="m-n_5" data-content="s-content_n_5">
+                <h2><span>«Выгодный»</span></h2>
+                <p>9,45%</p>
+                <p class="b-small_txt">Максимальный</br>доход</p>
+              </div>  
+            </li>
+          </ul> 
+        </div>         
+
+      </div>
+      <!--hr class="b-menu_bottom_line"/-->
+      <div class="b-menu_detailed">
+        
+        <div class="b-menu_detailed_item s-subsection_1"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_66">
+                <ul class="b-col_cover">
+                  <li class="b-col m-w_33">
+                    <h2><a href="#">«Крупный»</a></h2>
+                    <p>17%</p>
+                    <p>13 &ndash; 60 мес.</p>
+                    <p>400 000 &ndash; 3 млн. руб.</p>
+                  </li><li class="b-col m-w_33">
+                    <h2><a href="#">«Быстрый»</a></h2>
+                    <p>18%</p>
+                    <p>6 &ndash; 12 мес.</p>
+                    <p>100 000 &ndash; 3 млн. руб.</p>              
+                  </li><li class="b-col m-w_33">
+                    <h2><a href="#">«Удобный»</a></h2>
+                    <p>19%</p>
+                    <p>13 &ndash; 60 мес.</p>
+                    <p>100 000 &ndash; 399 999 руб.</p>              
+                  </li>
+                </ul>        
+                
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как получить кредит</a></p>
+                <p><a href="#">Страхование кредита</a></p>
+                <p><a href="#">Как погашать кредит</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>
+              </li>
+            </ul>
+            <span id="s-content_n_1" class="b-btn" data-menu="subsection_1">Сравнить кредиты</span>
+            <img  class="b-layer_bnr" src="img/bnr_17.png" />         
+          </div>
+          <img  class="b-layer_bnr_bg" src="img/bnr_17_bg.png" />
+        </div>    
+        <div class="b-menu_detailed_item s-subsection_2"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <h2><a href="#">Кредитные карты</a></h2>
+                <p><a href="#">Классические</a></p>
+                <p><a href="#">Золотые</a></p>
+                <p><a href="#">Платиновые</a></p>
+                <p><a href="#">Кредитная карта для снятия наличных</a></p>
+                <p><a href="#">Карта для путешествий</a></p>               
+              </li><li class="b-col m-w_33">
+                <h2><a href="#">Пакеты услуг с дебетовыми картами</a></h2>
+                <p><a href="#">Пакет «Классика»</a></p>
+                <p><a href="#">Пакет «Золото»</a></p>
+                <p><a href="#">Пакет «Привилегия»</a></p>              
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как получить карту</a></p>
+                <p><a href="#">Где снять наличные</a></p>
+                <p><a href="#">Бонусная программа «Коллекция»</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>            
+              </li>
+            </ul>
+            <span id="s-content_n_2" class="b-btn" data-menu="subsection_2">Сравнить кредитные карты</span>
+          </div>
+        </div>
+        <div class="b-menu_detailed_item s-subsection_3"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <h2><a href="#">Ипотека с господдержкой 12%</a></h2>
+                <h2><a href="#">Готовое жилье</a></h2>
+                <h2><a href="#">Квартира в новостройке</a></h2>
+                <h2><a href="#">Победа над формальностями</a></h2>
+                <h2><a href="#">Залоговая недвижимость</a></h2>
+                <h2><a href="#">Ипотека для военных</a></h2>
+              </li><li class="b-col m-w_33">
+                <h3>Выбор недвижимости</h3>
+                <p><a href="#">Новостройки</a></p>
+                <p><a href="#">Вторичный рынок</a></p>
+                <p><a href="#">Залоговое имущество</a></p>            
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как получить кредит</a></p>
+                <p><a href="#">Страхование кредита</a></p>
+                <p><a href="#">Как погашать кредит</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>           
+              </li>
+            </ul>
+            <span id="s-content_n_3" class="b-btn" data-menu="subsection_3">Рассчитать ипотеку</span>
+          </div>
+        </div>
+        <div class="b-menu_detailed_item s-subsection_4"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <h2><a href="#">Автокредит с господдержкой</a></h2>
+                <p>На автомобили до 1 млн. рублей</p>
+                <h2><a href="#">Автостандарт</a></h2>
+                <p>от 19,9% до 5 лет</p>
+                <h2><a href="#">Автоэкспресс</a></h2>
+                <p>По двум документам</p>
+                <h2><a href="#">Автолайт</a></h2>
+                <p>Без подтверждения дохода</p>
+              </li><li class="b-col m-w_33">
+                <h3>Спецпредложения производителей</h3>
+            
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как получить кредит</a></p>
+                <p><a href="#">Страхование кредита</a></p>
+                <p><a href="#">Как погашать кредит</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>           
+              </li>
+            </ul>
+            <span id="s-content_n_4" class="b-btn" data-menu="subsection_4">Сравнить автокредиты</span>
+          </div>
+        </div> 
+        <div class="b-menu_detailed_item s-subsection_5"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <h2><a href="#">«Комфортный»</a></h2>
+                <p>9,30%. Снятие и пополнение</p>
+                <h2 class="b-link"><div class="Video5" data-txt="m-n_5" data-content="s-content_n_5">«Накопительный»</div></h2>
+                <p>10,90%. Частичное пополнение</p>
+                <h2><a href="#">«Выгодный»</a></h2>
+                <p>11,15%. Максимальная ставка</p>
+              </li><li class="b-col m-w_33">
+                <h3>Сбережения</h3>
+                <p><a href="#">Накопительный счет</a></p>
+                <p><a href="#">Обезличенные металлические счета</a></p>
+                <p><a href="#">Монеты из драгоценных металлов</a></p>
+                <p><a href="#">Вклад до востребования</a></p>
+                <p><a href="#">Аренда сейфовых ячеек</a></p>           
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как открыть/закрыть вклад</a></p>
+                <p><a href="#">Страхование вкладов</a></p>
+                <p><a href="#">Налогообложение вкладов</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>           
+              </li>
+            </ul>
+            <span id="s-content_n_5" class="b-btn" data-menu="subsection_5">Сравнить вклады</span>
+          </div>
+        </div>
+        <div class="b-menu_detailed_item s-subsection_6"> <!-- Для работы скрипта важно написание и порядок класса в этих тэгах -->
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <h3>Услуги банка</h3>
+                <p><a href="#">Обмен валют</a></p>
+                <p><a href="#">Переводы и оплата услуг</a></p>
+                <p><a href="#">Банковский счет</a></p>
+                <p><a href="#">Аккредитивы</a></p>
+                <p><a href="#">Чеки</a></p>
+                <p><a href="#">Брокерское обслуживание и FOREX</a></p>
+                <p><a href="#">Витрина залогового имущества</a></p>
+                <p><a href="#">Бонусная программа «Коллекция»</a></p>
+              </li><li class="b-col m-w_33">
+                <h3>Дистанционное обслуживание</h3>
+                <p><a href="#">Интернет-банк</a></p>
+                <p><a href="#">Мобильный банк</a></p>
+                <p><a href="#">Обслуживание по телефону</a></p>
+                <p><a href="#">SMS-оповещения</a></p>
+                <p><a href="#">Обслуживание через банкомат</a></p>           
+              </li><li class="b-col m-w_33">
+                <h3>Справочная информация</h3>
+                <p><a href="#">Как подключить интернет-банк</a></p>
+                <p><a href="#">Возможности интернет-банка</a></p>
+                <p><a href="#">Восстановление доступа к интернет-банку</a></p>
+                <p><a href="#">Все вопросы по обслуживанию</a></p>           
+              </li>
+            </ul>
+          </div>
+        </div>                           
+        <div class="b-slide_up">
+          <span>закрыть</span>
+        </div>
+      </div>
+
+      <div class="b-switch_arrow_cover">
+        <div class="b-wrap">
+          <div class="b-switch_arrow">
+            <b class="b-arrow_prev"></b>
+            <b class="b-arrow_next"><!--div class="loader s-start"></div--></b>
+          </div> 
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="popup-fade"></div>  
+
+
+
+
+  <ul class="b-pseudo_click">
+    <li class="b-pseudo_click_item s-on"><span class="Video1" data-txt="m-n_1"></span></li>
+    <li class="b-pseudo_click_item"><span class="Video2" data-txt="m-n_2"></span></li>
+    <li class="b-pseudo_click_item"><span class="Video3" data-txt="m-n_3"></span></li>
+    <li class="b-pseudo_click_item"><span class="Video4" data-txt="m-n_4"></span></li>
+    <li class="b-pseudo_click_item"><span class="Video5" data-txt="m-n_5"></span></li>
+  </ul>
+
+
+  <i class="b-logo" /></i>
+
+
+  <div class="b-temp_content_cover">
+    <ul class="b-temp_content">
+      <li class="b-temp_content_item s-content_n_0" style="display:block;">
+        <img class="b-content_img" src="img/bg_content_0.jpg" />
+
+        <div class="b-gallery_block_cover">
+          <div class="b-gallery_block">
+            <div class="b-gallery_block_item">
+
+              <div data-offset="8" class="b-poster">
+                <div data-offset="5" class="layer-2_1"></div>
+                <div data-offset="-5" class="layer-2_2"></div>
+                <div class="b-poster_bottom">
+                  <h3>Накопи</h3>
+                  <p>5 продуктов</p>
+                </div>
+              </div>
+
+
+            </div>
+            <div class="b-gallery_block_item">
+
+              <div data-offset="8" class="b-poster">
+                <div data-offset="5" class="layer-1_1"></div>
+                <div data-offset="-5" class="layer-1_2"></div>
+                <div class="b-poster_bottom">
+                  <h3>Путешествуй</h3>
+                  <p>10 продуктов</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="b-gallery_block_item">
+
+              <div data-offset="8" class="b-poster">
+                <div data-offset="5" class="layer-3_1"></div>
+                <div data-offset="-5" class="layer-3_2"></div>
+                <div class="b-poster_bottom">
+                  <h3>Трать с умом</h3>
+                  <p>5 продуктов</p>
+                </div>
+              </div>
+              
+            </div>  
+          </div>
+        </div>
+
+        <div class="b-pay_tile">
+          <div class="b-wrap">
+            <ul class="b-col_cover">
+              <li class="b-col m-w_33">
+                <img src="img/plate_1.png" />
+              </li><li class="b-col m-w_33">
+                <img src="img/plate_2.png" />
+              </li><li class="b-col m-w_33">
+                <img src="img/plate_3.png" />
+              </li>
+            </ul>            
+          </div>          
+        </div>
+
+        <div class="b-parallax_block">
+          <div class="b-parallax_layer_0">
+            <i style="background: url(img/bg_parallax_big_1_0.jpg) no-repeat 0% 0%; background-size:cover;"></i>
+          </div>
+          <div class="b-wrap">
+            <img class="b-parallax_layer_1_1" src="img/bg_parallax_big_1_1.png" alt="" />
+          </div>
+          <div class="b-wrap">
+            <div class="b-bnr_txt m-middle_bnr">
+              <h1>«Кредитные каникулы»<br/>по кредиту наличными</h1>
+              <p class="b-bnr_subtitle">Пропуск планового платежа по кредиту без просрочки.</p>        
+              <span class="b-btn">Узнайте больше</span>
+            </div>
+          </div> 
+
+        </div>
+
+
+        <div class="b-footer_img"></div>
+      </li>
+      <li class="b-temp_content_item s-content_n_1"><img class="b-content_img" src="img/bg_content_1.png" /></li>
+      <li class="b-temp_content_item s-content_n_2"><img class="b-content_img" src="img/bg_content_2.png" /></li>
+      <li class="b-temp_content_item s-content_n_3"><img class="b-content_img" src="img/bg_content_3.png" /></li>
+      <li class="b-temp_content_item s-content_n_4"><img class="b-content_img" src="img/bg_content_1.png" /></li>
+      <li class="b-temp_content_item s-content_n_5">
+        <img class="b-content_img" src="img/bg_content_5.jpg" />
+
+        <div class="b-content_img_left">
+          <!--div class="b-wrap">
+            <div class="b-content_img_right"></div>
+          </div-->
+        </div>
+
+        <div class="b-parallax_layer_0">
+          <i style="background: url(img/bg_parallax_big_2_0.jpg) no-repeat 0% 0%; background-size:cover;"></i>
+        </div>  
+
+        <div class="b-parallax_block">
+          <div class="b-wrap">
+            <img class="b-parallax_layer_1_1" src="img/bg_parallax_big_2_1.png" alt="" />
+          </div>
+          <div class="b-wrap">
+            <div class="b-bnr_txt m-middle_bnr">
+              <h1>Как получать больше<br/>от своих денег?</h1>
+              <p class="b-bnr_subtitle">Держите ваши сбережения в&nbsp;надежном месте. <br/>Откройте вклад &laquo;Накопительный&raquo; уже сейчас</p>        
+              <span class="b-btn">Открыть вклад</span>
+            </div>
+          </div> 
+        </div>
+
+        <div class="b-footer_img"></div>
+
+      </li>
+    </ul>
+  </div>  
+  
+  <div class="b-loader_line"><div></div></div>
+
+</body>
+</html>
