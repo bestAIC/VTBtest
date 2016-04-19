@@ -1107,7 +1107,13 @@ div[class*="layer-"] {
 }
 
 #ibank .b-content_cover {
-  text-align: center;
+ 
+}
+
+#ibank .b-content_cover IMG {
+  position: relative;
+  left:50%;
+  margin-left: -1250px;
 }
 
 .b-submenu_content_cover {
