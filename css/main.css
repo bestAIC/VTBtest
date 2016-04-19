@@ -1269,8 +1269,12 @@ div[class*="layer-"] {
   width: 2000px;
   left: 400px;
   padding-top: 50px;
-  margin-bottom: 120px;
+  /*margin-bottom: 120px;*/
   transition-duration: 0.8s;  
+}
+
+.b-cards {
+  padding-bottom: 120px;
 }
 
 .b-card_group_cover.s-show {
@@ -1605,7 +1609,7 @@ div[class*="layer-"] {
   animation: shadow_glow;
   animation-delay: 0s;
   animation-duration: 1.5s;
-  animation-iteration-count: 99;
+  animation-iteration-count: infinite;
   animation-fill-mode: forwards;  
 }
 
