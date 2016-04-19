@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+  <meta name="viewport" content="width=device-width" />
+  <title>Test</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,300&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/main.css" media="all">
+
+  <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-ui.js"></script>
+  <script type="text/javascript" src="js/jquery.ui.touch-punch.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.scroll-to.min.js"></script>   
+  <script type="text/javascript" src="js/plugins-scroll.js"></script>
+  <script type="text/javascript" src="js/jquery.parallax.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+  <script type="text/javascript" src="js/ibank_main.js"></script>
+
+</head>
+
+<body id="ibank">
+
+  <div id="popup-fade"></div>
+
+  <div class="b-header">
+    <div class="b-wrap">
+      <div class="b-menu_cover">
+        <ul class="b-menu">
+          <li class="b-menu_item"><span class="s-menu_show s-active">Мои продукты</span></li>
+          <li class="b-menu_item"><span>Переводы</span></li>
+          <li class="b-menu_item"><span>Оплата услуг</span></li>
+          <li class="b-menu_item"><span>Обмен валют</span></li>
+          <li class="b-menu_item"><span>Витрина</span></li>
+        </ul>
+        <div class="b-line_slide"><div></div></div>
+      </div>
+    </div> 
+  </div>
+
+  <div id="scene1" class="b-submenu_content_cover">
+    <div class="b-parallax_bg layer" data-depth="0.5">
+      <img src="img/ibank_bg.jpg" alt="">
+    </div>
+
+    <div class="b-slide_bnr_cover">
+      <div class="b-slide_bnr_short"><img src="img/svg/arrow.svg" alt=""></div>
+      <div class="b-slide_bnr_long"></div>
+    </div> 
+
+    <div class="b-wrap m-menu_wrap">
+      <ul class="b-submenu">
+        <li class="b-submenu_item"><span class="s-submenu_show s-active" id="submenu_section_1" data-content-add="content_additional_1"><i>
+          <img src="img/svg/01-favorite.svg" alt="">
+        </i>Избранное</span></li>
+        <li class="b-submenu_item"><span class="s-submenu_show" id="submenu_section_2" data-content-add="content_additional_2"><i><img src="img/svg/02-card.svg" alt=""></i>Счета и карты</span></li>
+        <li class="b-submenu_item"><span class="s-submenu_show" id="submenu_section_3" data-content-add="content_additional_3"><i><img src="img/svg/03-safe.svg" alt=""></i>Вклады</span></li>
+        <li class="b-submenu_item"><span class="s-submenu_show" id="submenu_section_4" data-content-add="content_additional_4"><i><img src="img/svg/04-percent.svg" alt=""></i>Кредиты</span></li>
+        <!--li class="b-submenu_item"><span class="s-submenu_show" id="submenu_section_5"><i><img src="img/svg/05-active.svg" alt=""></i>Ваши средства</span></li-->        
+      </ul> 
+
+    </div>
+
+    <div class="b-wrap">
+
+      <div class="b-personalization"><i><img src="img/svg/settings.svg" alt=""></i>Персонализаця</div>
+
+      <ul class="b-submenu_content_additional">
+        <li class="b-submenu_content_additional_item s-content_additional_1">
+          <span class="b-show_more">Показать все избранные</span>
+        </li>
+        <li class="b-submenu_content_additional_item s-content_additional_2">
+          <span class="b-show_more"><i><img src="img/svg/plus.svg" alt=""></i>Добавить карту</span>
+        </li>        
+        <li class="b-submenu_content_additional_item s-content_additional_3">
+          <span class="b-show_more"><i><img src="img/svg/plus.svg" alt=""></i>Добавить вклад</span>
+        </li>
+        <li class="b-submenu_content_additional_item s-content_additional_4">
+          <span class="b-show_more"><i><img src="img/svg/plus.svg" alt=""></i>Добавить кредит</span>
+        </li>               
+      </ul> 
+
+      <ul class="b-submenu_content">
+        <li class="b-submenu_content_item m-clear s-submenu_section_1 s-active">
+          <ul class="b-card_group_cover m-clear m-n_1">
+            <li class="b-card_item m-n_1 m-group">
+              <div class="b-card m-n_1">
+                <div class="b-avers">
+                  <div class="b-avers_layer m-n_0">
+                  </div>                  
+                  <div class="b-avers_layer m-n_2">
+                  </div>
+                  <div class="b-avers_layer m-n_1">
+                    <img src="img/card_avers_1.png" alt="" />
+                  </div>                                        
+                </div>
+                <div class="b-revers">
+                  <div class="b-revers_layer m-n_1">
+                    <img src="img/group00.png" alt="" />
+                    <div class="b-revers_link s-rotate_card" id="card_select_1"></div>
+                    <div class="b-revers_link s-rotate_card" id="card_select_2"></div>
+                    <div class="b-revers_link s-rotate_card" id="card_select_3"></div>
+                  </div>
+                  <div class="b-revers_layer m-n_2">
+                    <div class="b-card_content s-card_select_1">
+                      <img src="img/group01.png" alt="" />
+                    </div>
+                    <div class="b-card_content s-card_select_2">
+                      <img src="img/group02.png" alt="" />
+                    </div>
+                    <div class="b-card_content s-card_select_3">
+                      <img src="img/group03.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="b-revers_layer m-n_0">
+                  </div>                  
+                </div>
+              </div>
+            </li>
+            <li class="b-card_item m-n_2">
+
+                <div class="b-card">
+                  <div class="b-avers">
+                    <img src="img/card_revers_1.png" alt="" />
+                  </div>
+                  <div class="b-revers">
+                    <img src="img/01.png" alt="" />
+                  </div>
+                </div>                
+             
+            </li>
+            <li class="b-card_item m-n_3">
+  
+                <div class="b-card">
+                  <div class="b-avers">
+                    <img src="img/card_revers_2.png" alt="" />
+                  </div>
+                  <div class="b-revers">
+                    <img src="img/group02.png" alt="" />
+                  </div>
+                </div>                 
+                 
+            </li>                        
+          </ul>
+          <div class="b-add_card">
+            <ul class="b-card_group_cover m-clear m-n_2">
+              <li class="b-card_item m-group">
+                <div class="b-card">
+                  <div class="b-avers">
+                    <img src="img/card_avers_2.png" alt="" />
+                  </div>
+                  <div class="b-revers">
+                    <img src="img/03.png" alt="" />
+                  </div>
+                </div>
+              </li>
+              <li class="b-card_item m-group">
+                <div class="b-card">
+                  <div class="b-avers">
+                    <img src="img/card_avers_3.png" alt="" />
+                  </div>
+                  <div class="b-revers">
+                    <img src="img/04.png" alt="" />
+                  </div>
+                </div> 
+              </li>                       
+            </ul>
+          </div>         
+        </li>
+        <li class="b-submenu_content_item s-submenu_section_2">
+          <img src="img/tab2.png" alt="" style="margin:50px 0 45px"/>       
+        </li>
+        <li class="b-submenu_content_item s-submenu_section_3">
+          <img src="img/tab3.png" alt="" style="margin:50px 0 45px"/>          
+        </li>
+        <li class="b-submenu_content_item s-submenu_section_4">
+          <img src="img/tab4.png" alt="" style="margin:50px 0 45px"/>                 
+        </li>
+        <!--li class="b-submenu_content_item s-submenu_section_5">
+         
+        </li-->                
+      </ul>   
+
+    </div>
+  </div>
+
+  <div class="b-content_cover">
+    <img src="img/ib_content_0.jpg" alt="" />
+  </div>
+
+    
+
+  <!--i class="b-logo" /></i-->
+ 
+
+</body>
+</html>

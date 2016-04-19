@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="14" viewBox="0 0 18 14">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="_02-card" data-name="02-card" class="cls-1" d="M104,194H90a2,2,0,0,1-2-2V182a2,2,0,0,1,2-2h14a2,2,0,0,1,2,2v10A2,2,0,0,1,104,194Zm0-12H90v2h14v-2Zm0,4H90v6h14v-6Zm-5,2h2a1,1,0,0,1,0,2H99A1,1,0,0,1,99,188Z" transform="translate(-88 -180)"/>
+</svg>
