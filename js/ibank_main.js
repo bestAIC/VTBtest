@@ -101,13 +101,13 @@ function ScrollWidth() { // убираем скролл у боди при пр�
 
 function HideShow() {
 
-  $('body').on('click', '.b-show_more:not(.s-show)', function(e) {
+  $('body').on('click', '.s-content_additional_1 .b-show_more:not(.s-show)', function(e) {
     $(this).addClass('s-show');
     $('.b-add_card').slideDown('250','easeOutSine', function() {
       $('.b-card_group_cover.m-n_2').animate({opacity: 1}, 500);
     });
   }); 
-  $('body').on('click', '.b-show_more.s-show', function(e) {
+  $('body').on('click', '.s-content_additional_1 .b-show_more.s-show', function(e) {
     $(this).removeClass('s-show');
     $('.b-card_group_cover.m-n_2').animate({opacity: 0}, 100);
     setTimeout(function() { 
@@ -158,7 +158,7 @@ function MenuShow() {
 function SubmenuShow() {
   rotate_lock = 0;
 
-  $('body').on('click', '.b-show_more:not(.s-show)', function(e) {
+  $('body').on('click', '.s-content_additional_1 .b-show_more:not(.s-show)', function(e) {
     setTimeout(function() {
       var bg_move = -500+($('.b-submenu_content_item.s-submenu_section_1').height()/2);
       $('.b-parallax_bg img').animate({
@@ -167,7 +167,7 @@ function SubmenuShow() {
     }, 260);
   });
 
-  $('body').on('click', '.b-show_more.s-show', function(e) {
+  $('body').on('click', '.s-content_additional_1 .b-show_more.s-show', function(e) {
     setTimeout(function() {
       var bg_move = -500+($('.b-submenu_content_item.s-submenu_section_1').height()/2);
       $('.b-parallax_bg img').animate({
